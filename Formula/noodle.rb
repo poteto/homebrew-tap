@@ -5,20 +5,20 @@
 class Noodle < Formula
   desc "AI agent orchestration powered by skills"
   homepage "https://github.com/poteto/noodle"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/poteto/noodle/releases/download/v0.1.2/noodle_darwin_amd64.tar.gz"
-      sha256 "206c0b30a034f9d90d41a5076d9fe46ef2efccbbeac63f6b72b97e8030bfd466"
+      url "https://github.com/poteto/noodle/releases/download/v0.1.3/noodle_darwin_amd64.tar.gz"
+      sha256 "ba576687adbd6f105542684a241126a4f8714dbda01c050046850e14c199d04c"
 
       define_method(:install) do
         bin.install "noodle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/poteto/noodle/releases/download/v0.1.2/noodle_darwin_arm64.tar.gz"
-      sha256 "f4f124a35a6ef30161d2634d00b77d61759e816616f991f427f8de1be5884414"
+      url "https://github.com/poteto/noodle/releases/download/v0.1.3/noodle_darwin_arm64.tar.gz"
+      sha256 "a4cfd16ebc86bc1fbcdbd1415c78d096465a0332f8a4967dad9152f551f89ce9"
 
       define_method(:install) do
         bin.install "noodle"
@@ -28,15 +28,15 @@ class Noodle < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/poteto/noodle/releases/download/v0.1.2/noodle_linux_amd64.tar.gz"
-      sha256 "43ecaccb319a0256fb8b44e94936973e989eafd702f17923bef6aa492c1b20de"
+      url "https://github.com/poteto/noodle/releases/download/v0.1.3/noodle_linux_amd64.tar.gz"
+      sha256 "1de76e0f41340e16a6ef5f8dbfb56daedbc066efe2a6e29e8d60f2a05d836412"
       define_method(:install) do
         bin.install "noodle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/poteto/noodle/releases/download/v0.1.2/noodle_linux_arm64.tar.gz"
-      sha256 "a0f6b6c1726f3919151bec532b55efa462aa3ad1e7f11e253bb0be82e19253b5"
+      url "https://github.com/poteto/noodle/releases/download/v0.1.3/noodle_linux_arm64.tar.gz"
+      sha256 "27fef34dcb61f77c6d9c3ff1f27e19e9c652e14cf7ca0e398f227bad7d072533"
       define_method(:install) do
         bin.install "noodle"
       end
